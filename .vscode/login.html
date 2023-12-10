@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta
+      name="google-signin-client_id"
+      content="897314769362-rctsq2837g8fqo08nf7ip8b7n3g0dm52.apps.googleusercontent.com"
+    />
+    <meta
+      http-equiv="Cross-Origin-Opener-Policy"
+      content="same-origin-allow-popups"
+    />
+  </head>
+  <body>
+    <div class="g-signin2" data-onsuccess="onSignIn1"></div>
+  </body>
+
+  <script>
+    // 登入之後
+    function onSignIn1(response) {
+      console.log(response);
+    }
+  </script>
+</html>
